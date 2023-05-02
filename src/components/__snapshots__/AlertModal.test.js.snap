@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders properly 1`] = `
+<Modal
+  animation={true}
+  aria-labelledby="contained-modal-title-vcenter"
+  autoFocus={true}
+  backdrop={true}
+  centered={true}
+  dialogAs={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "displayName": "ModalDialog",
+      "render": [Function],
+    }
+  }
+  enforceFocus={true}
+  keyboard={true}
+  restoreFocus={true}
+  show={false}
+  size="lg"
+>
+  <ModalHeader
+    closeButton={true}
+    closeLabel="Close"
+  >
+    <ModalTitle
+      id="contained-modal-title-vcenter"
+    />
+  </ModalHeader>
+  <ModalBody>
+    <p />
+  </ModalBody>
+  <ModalFooter>
+    <Button
+      active={false}
+      disabled={false}
+      variant="primary"
+    >
+      Close
+    </Button>
+  </ModalFooter>
+</Modal>
+`;

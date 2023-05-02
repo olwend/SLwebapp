@@ -1,0 +1,21 @@
+export const initialFormValues = {
+    labName: "",
+    description: "",
+    types: [],
+    categories: [],
+    resourcesCPUMEM: "",
+    timer: "",
+    active: false,
+    ide: false,
+    shell: false,
+    basePorts: [],
+    containerDefinition: [],
+    userUuid: "",
+    uuid: "",
+    baseGitUrl: "",
+    achievements: false,
+    achievementsImage: "",
+    achievementsDebug: false,
+    integratedWebsite: false,
+    integratedWebsiteURL: ""
+  }

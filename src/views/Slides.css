@@ -1,0 +1,70 @@
+.slides {
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  font-size: inherit;
+}
+
+.markdown {
+  overflow: auto;
+}
+
+.slides h1 {
+  font-size: 150%;
+  font-weight: bolder;
+}
+
+.slides h2 {
+  font-size: 140%;
+  font-weight: bolder;
+}
+
+.slides h3 {
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.slides h4 {
+  font-size: 120%;
+  font-weight: normal;
+}
+
+.slides h5 {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+.slides h6 {
+  font-size: 105%;
+  font-weight: bolder;
+}
+
+.slides img {
+  display: block;
+  margin: auto;
+}
+
+.progressBar {
+  background-color: rgb(245, 245, 245)
+}
+
+.progressBarContainer {
+  margin-bottom: 3px;
+}
+
+.jumpToContainer {
+  text-align: center;
+}
+
+.jumpToContainer input {
+  margin-left: 10px;
+  width: 50px;
+}
+
+.fontSizeContainer {
+  text-align: center;
+}
+
+.fontSizeContainer input {
+  margin-left: 10px;
+  width: 50px;
+}

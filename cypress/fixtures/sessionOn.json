@@ -1,0 +1,22 @@
+[
+    {
+        "labMeta": {
+            "timer": {
+                "value": "30",
+                "label": "30 minutes"
+            },
+            "shell": false,
+            "labId": "7ca69d9a-2589-4ec3-9c21-adc9be7b159e",
+            "basePorts": [],
+            "labName": "TestAutomation-3",
+            "ide": true,
+            "cDef": []
+        },
+        "startDateTime": "2021-03-10T15:38:41.748Z",
+        "userId": "47a7de9d-c151-4ed3-a044-7bceda385acd",
+        "status": "CREATE_COMPLETE",
+        "achievementsId": "2cc6cee0-dc91-411b-bdd1-e19481edb624",
+        "uuid": "72fba3f6-2cca-4945-b2a0-99e68052e6bb",
+        "createDateTime": "2021-03-10T15:38:41.748Z"
+    }
+]

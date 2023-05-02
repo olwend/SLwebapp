@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders properly 1`] = `
+<Nav
+  navbar={true}
+  tag="ul"
+  vertical={false}
+>
+  <UncontrolledDropdown
+    inNavbar={true}
+    nav={true}
+  >
+    <DropdownToggle
+      aria-haspopup={true}
+      caret={true}
+      color="secondary"
+      data-cy="dropdown-login-menu"
+      nav={true}
+    >
+      <PersonIcon
+        className="octicon"
+        size={16}
+        verticalAlign="text-bottom"
+      />
+    </DropdownToggle>
+    <DropdownMenu
+      flip={true}
+      right={true}
+      tag="div"
+    >
+      <DropdownItem
+        data-cy="dropdown-login-button"
+        tag={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Link",
+            "propTypes": Object {
+              "innerRef": [Function],
+              "onClick": [Function],
+              "replace": [Function],
+              "target": [Function],
+              "to": [Function],
+            },
+            "render": [Function],
+          }
+        }
+        to="/login"
+        toggle={true}
+      >
+        Login
+      </DropdownItem>
+    </DropdownMenu>
+  </UncontrolledDropdown>
+</Nav>
+`;

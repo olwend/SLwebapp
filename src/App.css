@@ -1,0 +1,11 @@
+.main-container {
+  flex: 1;
+
+  overflow: auto;
+}
+
+.sticky-nav-bottom {
+  position: sticky;
+  bottom: 0;
+  background-color: #f8f9fa
+}

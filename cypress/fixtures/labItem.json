@@ -1,0 +1,36 @@
+{
+  "types": [
+      {
+          "label": "Academy",
+          "value": "academy"
+      }
+  ],
+  "timer": {
+      "label": "30 minutes",
+      "value": "30"
+  },
+  "basePorts": [],
+  "resourcesCPUMEM": {
+      "label": "256 / 512 : (vCPU; units) / (Memory; MiB)",
+      "value": "256:512"
+  },
+  "categories": [
+      {
+          "label": "Cloud",
+          "value": "cloud"
+      }
+  ],
+  "containerDefinition": [],
+  "createdDateTime": 1615561036,
+  "uuid": "7ca69d9a-2589-4ec3-9c21-adc9be7b159e",
+  "description": "TestDescription",
+  "labName": "TestAutomation-1",
+  "userUuid": "47a7de9d-c151-4ed3-a044-7bceda385acd",
+  "achievements": false,
+  "achievementsDebug": false,
+  "achievementsImage": "",
+  "ide": true,
+  "active": true,
+  "shell": false,
+      "baseGitUrl": ""
+}

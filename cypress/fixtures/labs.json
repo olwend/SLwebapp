@@ -1,0 +1,408 @@
+{
+    "totalItems": 7,
+    "items": [
+        {
+            "types": [
+                {
+                    "label": "DevOps Playground",
+                    "value": "devopsplayground"
+                }
+            ],
+            "timer": {
+                "label": "90 minutes",
+                "value": "90"
+            },
+            "basePorts": [],
+            "resourcesCPUMEM": {
+                "label": "512 / 2048 : (vCPU; units) / (Memory; MiB)",
+                "value": "512:2048"
+            },
+            "categories": [
+                {
+                    "label": "Continuous Integration",
+                    "value": "continuousintegration"
+                }
+            ],
+            "containerDefinition": [
+                {
+                    "path": "",
+                    "image": "devopspg/jenkins:dpg",
+                    "ports": [
+                        {
+                            "port": "8080",
+                            "visible": true
+                        }
+                    ],
+                    "envVars": "",
+                    "shortName": "jenkins",
+                    "mountPoints": []
+                }
+            ],
+            "createdDateTime": 1611851000,
+            "uuid": "9e2f6b09-629e-46a3-b08a-f8f057ec3b65",
+            "description": "Investigating how to port our latest playground to skillslounge",
+            "labName": "DevOps playground - November - Jenkins test",
+            "userUuid": "b0e17f6f-7be9-43f7-a12c-e299bce8ea31",
+            "achievements": false,
+            "achievementsDebug": false,
+            "achievementsImage": "busybox",
+            "ide": true,
+            "active": true,
+            "shell": true,
+            "baseGitUrl": "git@bitbucket.org:ecs-group/hands-on-with-jenkins-terraform-and-aws.git"
+        },
+        {
+            "types": [
+                {
+                    "label": "PuneDevSecOps",
+                    "value": "punedevsecops"
+                }
+            ],
+            "timer": {
+                "label": "180 minutes",
+                "value": "180"
+            },
+            "basePorts": [],
+            "resourcesCPUMEM": {
+                "label": "512 / 2048 : (vCPU; units) / (Memory; MiB)",
+                "value": "512:2048"
+            },
+            "categories": [
+                {
+                    "label": "Security",
+                    "value": "security"
+                }
+            ],
+            "containerDefinition": [
+                {
+                    "path": "",
+                    "image": "630895193694.dkr.ecr.eu-west-1.amazonaws.com/dev-repository:itdo-jenkins",
+                    "ports": [
+                        {
+                            "port": "8080",
+                            "visible": true
+                        }
+                    ],
+                    "envVars": "JAVA_OPTS=-Djenkins.install.runSetupWizard=false -Xmx1024m",
+                    "shortName": "Jenkins",
+                    "mountPoints": []
+                },
+                {
+                    "path": "",
+                    "image": "bkimminich/juice-shop",
+                    "ports": [
+                        {
+                            "port": "3000",
+                            "visible": true
+                        }
+                    ],
+                    "envVars": "",
+                    "shortName": "JuiceShop",
+                    "mountPoints": []
+                }
+            ],
+            "createdDateTime": 1611851000,
+            "uuid": "387108b2-30d4-4835-99b7-8aa9785b25a6",
+            "description": "PUNE - DSO - Dynamic Application Security Testing (DAST)",
+            "labName": "PUNE - DSO - Dynamic Application Security Testing (DAST)",
+            "userUuid": "c9a5479a-47e8-40b0-8b66-647111dcb9a8",
+            "achievements": false,
+            "achievementsDebug": false,
+            "achievementsImage": "busybox",
+            "ide": false,
+            "active": true,
+            "shell": false,
+            "baseGitUrl": ""
+        },
+        {
+            "types": [
+                {
+                    "label": "PuneDevSecOps",
+                    "value": "punedevsecops"
+                }
+            ],
+            "timer": {
+                "label": "180 minutes",
+                "value": "180"
+            },
+            "basePorts": [],
+            "resourcesCPUMEM": {
+                "label": "512 / 1024 : (vCPU; units) / (Memory; MiB)",
+                "value": "512:1024"
+            },
+            "categories": [
+                {
+                    "label": "Security",
+                    "value": "security"
+                }
+            ],
+            "containerDefinition": [
+                {
+                    "path": "",
+                    "image": "630895193694.dkr.ecr.eu-west-1.amazonaws.com/dev-repository:itdo-gitea",
+                    "ports": [
+                        {
+                            "port": "3000",
+                            "visible": true
+                        },
+                        {
+                            "port": "22"
+                        }
+                    ],
+                    "envVars": "DB_TYPE=sqlite3,DISABLE_REGISTRATION=true,INSTALL_LOCK=true",
+                    "shortName": "Gitea",
+                    "mountPoints": []
+                }
+            ],
+            "createdDateTime": 1611851000,
+            "uuid": "2a320f87-609d-474b-9262-23feaefacbbe",
+            "description": "PUNE - DSO - Secured Version Control Systems",
+            "labName": "PUNE - DSO - Secured Version Control Systems",
+            "userUuid": "c9a5479a-47e8-40b0-8b66-647111dcb9a8",
+            "achievements": false,
+            "achievementsDebug": false,
+            "achievementsImage": "busybox",
+            "ide": true,
+            "active": true,
+            "shell": false,
+            "baseGitUrl": "git@bitbucket.org:ecs-group/dso-gitsecrets.git"
+        },
+        {
+            "types": [
+                {
+                    "label": "PuneDevSecOps",
+                    "value": "punedevsecops"
+                }
+            ],
+            "timer": {
+                "label": "180 minutes",
+                "value": "180"
+            },
+            "basePorts": [],
+            "resourcesCPUMEM": {
+                "label": "256 / 1024 : (vCPU; units) / (Memory; MiB)",
+                "value": "256:1024"
+            },
+            "categories": [
+                {
+                    "label": "Security",
+                    "value": "security"
+                }
+            ],
+            "containerDefinition": [],
+            "createdDateTime": 1611851000,
+            "uuid": "2fd9529a-a200-48ca-8470-21dfa05dceae",
+            "description": "PUNE - DSO - Securing Kubernetes",
+            "labName": "PUNE - DSO - Securing Kubernetes",
+            "userUuid": "c9a5479a-47e8-40b0-8b66-647111dcb9a8",
+            "achievements": false,
+            "achievementsDebug": false,
+            "achievementsImage": "busybox",
+            "ide": true,
+            "active": true,
+            "shell": false,
+            "baseGitUrl": "git@bitbucket.org:ecs-group/dso-securing_k8s.git"
+        },
+        {
+            "types": [
+                {
+                    "label": "PuneDevSecOps",
+                    "value": "punedevsecops"
+                }
+            ],
+            "timer": {
+                "label": "180 minutes",
+                "value": "180"
+            },
+            "basePorts": [],
+            "resourcesCPUMEM": {
+                "label": "512 / 2048 : (vCPU; units) / (Memory; MiB)",
+                "value": "512:2048"
+            },
+            "categories": [
+                {
+                    "label": "Security",
+                    "value": "security"
+                }
+            ],
+            "containerDefinition": [
+                {
+                    "path": "",
+                    "image": "630895193694.dkr.ecr.eu-west-1.amazonaws.com/dev-repository:itdo-jenkins",
+                    "ports": [
+                        {
+                            "port": "8080",
+                            "visible": true
+                        }
+                    ],
+                    "envVars": "JAVA_OPTS=-Djenkins.install.runSetupWizard=false -Xmx1024m",
+                    "shortName": "Jenkins",
+                    "mountPoints": []
+                },
+                {
+                    "path": "",
+                    "image": "630895193694.dkr.ecr.eu-west-1.amazonaws.com/dev-repository:itdo-gitea",
+                    "ports": [
+                        {
+                            "port": "3000",
+                            "visible": true
+                        }
+                    ],
+                    "envVars": "DB_TYPE=sqlite3,DISABLE_REGISTRATION=true,INSTALL_LOCK=true",
+                    "shortName": "Gitea",
+                    "mountPoints": []
+                }
+            ],
+            "createdDateTime": 1611851000,
+            "uuid": "440e0fe1-b842-485a-97de-2556e1fead08",
+            "description": "PUNE - DSO - Vulnerability Scanning (Snyk)",
+            "labName": "PUNE - DSO - Vulnerability Scanning (Snyk)",
+            "userUuid": "c9a5479a-47e8-40b0-8b66-647111dcb9a8",
+            "achievements": false,
+            "achievementsDebug": false,
+            "achievementsImage": "busybox",
+            "ide": false,
+            "active": true,
+            "shell": false,
+            "baseGitUrl": ""
+        },
+        {
+            "types": [
+                {
+                    "label": "PuneDevOps",
+                    "value": "punedevops"
+                }
+            ],
+            "timer": {
+                "label": "180 minutes",
+                "value": "180"
+            },
+            "basePorts": [],
+            "resourcesCPUMEM": {
+                "label": "256 / 512 : (vCPU; units) / (Memory; MiB)",
+                "value": "256:512"
+            },
+            "categories": [
+                {
+                    "label": "Infrastructure-as-Code",
+                    "value": "infrastructureascode"
+                }
+            ],
+            "containerDefinition": [],
+            "createdDateTime": 1611851000,
+            "uuid": "16d6515d-b023-4200-adae-86a77e404073",
+            "description": "PUNE - ITDO - Cloudformation",
+            "labName": "PUNE - ITDO - Cloudformation",
+            "userUuid": "c9a5479a-47e8-40b0-8b66-647111dcb9a8",
+            "achievements": false,
+            "achievementsDebug": false,
+            "achievementsImage": "busybox",
+            "ide": true,
+            "active": true,
+            "shell": false,
+            "baseGitUrl": "git@bitbucket.org:ecs-group/itdo-cf.git"
+        },
+        {
+            "types": [
+                {
+                    "label": "PuneDevOps",
+                    "value": "punedevops"
+                }
+            ],
+            "timer": {
+                "label": "180 minutes",
+                "value": "180"
+            },
+            "basePorts": [],
+            "resourcesCPUMEM": {
+                "label": "1024 / 3072 : (vCPU; units) / (Memory; MiB)",
+                "value": "1024:3072"
+            },
+            "categories": [
+                {
+                    "label": "Continuous Integration",
+                    "value": "continuousintegration"
+                }
+            ],
+            "containerDefinition": [
+                {
+                    "path": "",
+                    "image": "630895193694.dkr.ecr.eu-west-1.amazonaws.com/dev-repository:itdo-gitea",
+                    "ports": [
+                        {
+                            "port": "3000",
+                            "visible": true
+                        }
+                    ],
+                    "envVars": "DISABLE_REGISTRATION=true,INSTALL_LOCK=true,DB_TYPE=sqlite3",
+                    "shortName": "Gitea",
+                    "mountPoints": []
+                },
+                {
+                    "path": "",
+                    "image": "sonarqube:8.5-community",
+                    "ports": [
+                        {
+                            "port": "9000",
+                            "visible": true
+                        }
+                    ],
+                    "envVars": "SONAR_CE_JAVAOPTS=-Xmx1500m",
+                    "shortName": "SonarQube",
+                    "mountPoints": []
+                }
+            ],
+            "createdDateTime": 1611851000,
+            "uuid": "7a1adbec-4ac0-4082-b02c-6f095a5ccf22",
+            "description": "PUNE - ITDO - Code Analysis and Test Coverage (Java)",
+            "labName": "PUNE - ITDO - Code Analysis and Test Coverage (Java)",
+            "userUuid": "c9a5479a-47e8-40b0-8b66-647111dcb9a8",
+            "achievements": false,
+            "achievementsDebug": false,
+            "achievementsImage": "busybox",
+            "ide": true,
+            "active": true,
+            "shell": false,
+            "baseGitUrl": ""
+        },
+        {
+            "types": [
+                {
+                    "label": "Academy",
+                    "value": "academy"
+                }
+            ],
+            "timer": {
+                "label": "30 minutes",
+                "value": "30"
+            },
+            "basePorts": [],
+            "resourcesCPUMEM": {
+                "label": "256 / 1024 : (vCPU; units) / (Memory; MiB)",
+                "value": "256:1024"
+            },
+            "categories": [
+                {
+                    "label": "Artifact Management",
+                    "value": "artifactmanagement"
+                }
+            ],
+            "containerDefinition": [],
+            "createdDateTime": 1611851000,
+            "uuid": "bf05d1b1-df6e-4cec-a789-249fb8b0e88f",
+            "description": "ach7",
+            "labName": "ach7",
+            "userUuid": "c9a5479a-47e8-40b0-8b66-647111dcb9a8",
+            "achievements": false,
+            "achievementsDebug": false,
+            "achievementsImage": "busybox",
+            "ide": true,
+            "active": true,
+            "shell": false,
+            "baseGitUrl": ""
+        }
+        
+    ],
+    "totalPages": null,
+    "currentPage": 0
+}

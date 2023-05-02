@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders properly 1`] = `
+<Modal
+  autoFocus={true}
+  backdrop={true}
+  backdropTransition={
+    Object {
+      "mountOnEnter": true,
+      "timeout": 150,
+    }
+  }
+  centered={false}
+  fade={true}
+  isOpen={false}
+  keyboard={true}
+  modalTransition={
+    Object {
+      "timeout": 300,
+    }
+  }
+  onClosed={[Function]}
+  onOpened={[Function]}
+  returnFocusAfterClose={true}
+  role="dialog"
+  scrollable={false}
+  unmountOnClose={true}
+  zIndex={1050}
+>
+  <ModalHeader
+    charCode={215}
+    closeAriaLabel="Close"
+    tag="h5"
+    wrapTag="div"
+  >
+    Labs Setup
+  </ModalHeader>
+  <ModalBody
+    className="mb-3"
+    tag="div"
+  >
+    <div
+      className="progress-container"
+    >
+      <Progress
+        max="100"
+        tag="div"
+        value={0}
+      >
+        <span
+          className="progress-value"
+          style={
+            Object {
+              "fontSize": "10px",
+            }
+          }
+        >
+          %
+        </span>
+      </Progress>
+    </div>
+  </ModalBody>
+</Modal>
+`;

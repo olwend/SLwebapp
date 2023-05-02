@@ -1,0 +1,20 @@
+.no-data-indication {
+    margin-top: 75px;
+}
+
+.achievement {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .achievement-container {
+    columns: 1;
+    align-items:space-between;
+    justify-content:space-between;
+    flex-wrap:wrap;
+  }
+  
+  .achievement-description {
+    color: #9A9A9A;
+    font-weight: 600; 
+  }

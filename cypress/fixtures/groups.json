@@ -1,0 +1,64 @@
+{
+    "groups": [
+      {
+        "groupName": "Admin",
+        "description": "Admin",
+        "lastModifiedDate": "2020-11-12T02:02:05.412Z",
+        "creationDate": "2020-06-15T19:47:07.731Z"
+      },
+      {
+        "groupName": "Developer",
+        "description": "Developer",
+        "lastModifiedDate": "2020-10-23T12:36:04.255Z",
+        "creationDate": "2020-07-07T10:31:27.196Z"
+      },
+      {
+        "groupName": "academy",
+        "description": "Academy",
+        "lastModifiedDate": "2020-10-23T09:15:28.624Z",
+        "creationDate": "2020-10-19T10:02:08.588Z"
+      },
+      {
+        "groupName": "billy",
+        "description": "sfds",
+        "lastModifiedDate": "2020-12-22T09:47:36.108Z",
+        "creationDate": "2020-12-22T09:47:36.108Z"
+      },
+      {
+        "groupName": "cy-group",
+        "description": "Test Group",
+        "lastModifiedDate": "2020-11-12T04:38:01.421Z",
+        "creationDate": "2020-11-12T04:38:01.421Z"
+      },
+      {
+        "groupName": "devopsplayground",
+        "description": "DevOps Playground",
+        "lastModifiedDate": "2020-10-23T09:17:50.587Z",
+        "creationDate": "2020-10-19T10:01:21.747Z"
+      },
+      {
+        "groupName": "hsbc",
+        "description": "HSBC",
+        "lastModifiedDate": "2020-10-23T09:18:10.616Z",
+        "creationDate": "2020-10-22T08:28:58.736Z"
+      },
+      {
+        "groupName": "punedevops",
+        "description": "PuneDevOps",
+        "lastModifiedDate": "2021-01-12T05:49:54.268Z",
+        "creationDate": "2021-01-12T05:49:54.268Z"
+      },
+      {
+        "groupName": "punedevsecops",
+        "description": "PuneDevSecOps",
+        "lastModifiedDate": "2021-01-12T06:28:12.078Z",
+        "creationDate": "2021-01-12T06:28:12.078Z"
+      },
+      {
+        "groupName": "test1234",
+        "description": "fdasd",
+        "lastModifiedDate": "2021-03-25T13:15:25.588Z",
+        "creationDate": "2021-03-25T13:15:25.588Z"
+      }
+    ]
+  }

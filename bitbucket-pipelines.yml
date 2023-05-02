@@ -1,0 +1,105 @@
+definitions:
+    steps:
+        - step: &UnitTest
+            name: Unit tests
+            image: node:12.6
+            script: 
+                - npm install
+                - npm run test:ci
+            caches:
+                - node
+            artifacts:
+                - coverage/**
+
+        - step: &Build
+            name: Build the application
+            image: node:12.6
+            script: 
+                - npm install
+                - npm run build
+            artifacts:
+                - build/**
+            caches:
+                - node
+
+        - step: &BuldNumber
+            name: Record Build Number
+            script:
+                - mkdir -p build
+                - echo $BITBUCKET_BUILD_NUMBER > build/build.txt
+            artifacts:
+                - build/**
+
+        - step: &E2ETest
+            name: E2E tests
+            caches:
+                - npm
+                - cypress
+            image: cypress/base:10
+            script:
+                - npm ci
+                - npm run e2e:ci
+            artifacts:
+                - cypress/screenshots/**
+                - cypress/videos/**
+
+        - step: &Deploy
+            name: Deploy to S3
+            script:
+            - pipe: atlassian/aws-s3-deploy:0.2.4
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $BUCKET_NAME
+                LOCAL_PATH: "build"
+
+    caches:
+        npm: $HOME/.npm
+        cypress: $HOME/.cache/Cypress
+
+
+pipelines:
+    pull-requests:
+        '**': #this runs as default for any branch not elsewhere defined
+            - step: *UnitTest
+            - step: *E2ETest
+    default:
+        - step: *UnitTest
+    branches:
+        dev:
+            - step:
+                name: Generate the environment file
+                image: hashicorp/terraform:0.14.10
+                script:
+                        - cd environment
+                        - terraform init
+                        - terraform apply --auto-approve -var 'environment=dev'
+                artifacts:
+                        - .env 
+            - step: *UnitTest
+            - step: *Build
+            - step: *E2ETest
+            - step: *BuldNumber 
+            - step: 
+                <<: *Deploy
+                deployment: fe-deploy-development
+
+        master:
+            - step:
+                name: Generate environment file
+                image: hashicorp/terraform:0.14.10
+                script:
+                    - cd environment
+                    - terraform init
+                    - terraform apply --auto-approve -var 'environment=prod'
+                artifacts:
+                    - .env 
+            - step: *UnitTest
+            - step: *Build
+            - step: *E2ETest
+            - step: *BuldNumber 
+            - step: 
+                <<: *Deploy
+                deployment: fe-deploy-production
+
